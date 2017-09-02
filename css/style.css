@@ -1,0 +1,129 @@
+/*OVERALL*/
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+/*NAVIGATION*/
+.navbar {
+    backgound-color: black;
+}
+
+#navigation {
+    font-size: 17px;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+}
+
+.navbar-brand {
+    margin: -25px;
+}
+
+.logo {
+    margin-top: 0px;
+    max-width: 10%;
+}
+
+#logo {
+    margin-top: 0px;
+    margin-left: -30px;
+    max-width: 18%;
+}
+
+.links {
+    text-align: right;
+    color: white;
+}
+
+.navbar-nav >li >a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: right;
+}
+
+.form-control {
+    margin-top: 8px;
+}
+
+#main-nav-menu {
+    justify-content: flex-end;
+}
+
+/*CAROUSEL INNER*/
+#myCarousel {
+    margin-top: 0%;
+}
+
+.carousel-inner {
+    max-height: 700px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#carousel-images {
+    max-height: 700px;
+}
+
+/*ARTICLES*/
+#theTabs {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.articles {
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-top: 8px solid ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 8px solid ;
+
+}
+
+.article-text {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.photo-caption {
+    text-align: center;
+}
+.image-companions {
+    max-width: 50%;
+}
+
+
+/*FANDOM*/
+#fandom {
+    padding-bottom: 20px;
+    border-bottom: 8px solid ;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+.source {
+    margin-top: 5px;
+}
+
+/*FOOTER*/
+.red {
+    color: red;
+}
+
+#footer {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+}
