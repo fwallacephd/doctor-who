@@ -14,17 +14,18 @@
 
     <title>Doctor Who Fan Page</title>
 
-    <!-- Bootstrap, CSS, Font Awesome, and Fonts -->
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+    <!-- Bootstrap, Animate.css, Font Awesome, CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--Need to get the following fonts from Google Fonts: Playfair Display: 400, 700, 900 and Josefin Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
 
-    <!--Font Link 1-->
-    <!--Font Link 2-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
 
 </head><!--End Head Tags-->
 
@@ -32,13 +33,13 @@
 <body>
 
 <section id="navigation">
-    <nav class="">
+    <nav class="navbar navbar-inverse">
        <div class="container">
-       <div class="">
-         <a href="#navigation" class="">
-             <img id="logo" class="" src="" alt="Doctor Who Logo">
+       <div class="navbar-header">
+         <a href="#navigation" class="navbar-brand">
+             <img id="logo" class="img-responsive center-block" src="images/Doctor_Who_Logo_without_BBC.jpg" alt="Doctor Who Logo">
          </a>
-          <button type="" class="" data-toggle="collapse" data-target="#" aria-expanded="">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
               <span class="sr-only">Toggle Navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -46,15 +47,15 @@
           </button>
        </div><!--END Navbar-header-->
 
-       <div class="" id="collapsemenu">
-           <ul id="nav-links" class="">
+       <div class="collapse navbar-collapse" id="collapsemenu">
+           <ul id="nav-links" class="nav navbar-nav navbar-right">
                <li class="links active"><a href="#home">Home</a></li>
                <li class="links"><a href="#articles">Articles</a></li>
                <li class="links"><a href="#books">Book Recommendations</a></li>
                <li class="links"><a href="#fanart">Fan Art</a></li>
                <li class="nav-item">
-                    <input class="" placeholder="" style="display: inline-block; width:auto;">
-                    <button class="" style="display:inline-block;"></button>
+                    <input class="form-control" placeholder="Search" style="display: inline-block; width:auto;">
+                    <button class="btn btn-primary" style="display:inline-block;">Alons-y</button>
                 </li>
             </ul><!--END ul-->
        </div><!--END Collapse-->
@@ -65,34 +66,41 @@
 
 
 <div class="container">
-    <div id="myCarousel" class="" data-ride="">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 
     <!--Indicators-->
-        <ol class="">
-            <li data-target="#myCarousel" ></li>
-            <li data-target="#myCarousel" ></li>
-            <li data-target="#myCarousel" ></li>
-            <li data-target="#myCarousel" ></li>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
-<!-- Carousel Inner -->
+<!-- Wrapper for slides -->
 <div id="carousel-images" class="carousel-inner">
     <div class="item active">
-        <img class="" src="" alt="Doctor Who Cast 12 Doctors">
+        <img class="img-responsive" src="images/12Doctorssmall.jpg" alt="Doctor Who Cast 12 Doctors">
     </div>
     <div class="item">
-        <img class="" src="" alt="Doctor Who with Matt Smith">
+        <img class="img-responsive" src="images/whocastsmall.jpg" alt="Doctor Who with Matt Smith">
     </div>
     <div class="item">
-        <img class="" src="" alt="Doctor Who with Peter Capaldi">
+        <img class="img-responsive" src="images/capaldicastsmall.png" alt="Doctor Who with Peter Capaldi">
     </div>
     <div class="item">
-        <img class="" src="" alt="The New Doctor Jodie Whittaker">
+        <img class="img-responsive" src="images/doctorwhojodiresize.jpg" alt="The New Doctor Jodie Whittaker">
     </div>
 </div><!--END Carousel Inner-->
 
 <!-- Left and right controls -->
-
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div><!--END myCarousel-->
 </div><!--END Container for Carousel-->
 
@@ -108,17 +116,19 @@
             </ul><!--END Tabs for Articles-->
             <div id="mytabcontent" class="tab-content">
 
+               <!--IMAGE SIZES in ARTICLES: 560 x 282-->
 
                 <div class="tab-pane active in" id="article1">
                     <div class="row">
                         <div class="col-md-11">
                         <h2>What You Need to Know About the Whoniverse</h2>
                         <p class="article-text">Doctor Who, a British television show that started in 1963, is an amalgamation of various genres including science fiction, fantasy, horror, and, sometimes, a healthy dose of fairy tale.  The main character is The Doctor, an alien: a Time Lord from the Planet Gallifrey. The Doctor travels through time and space in his TARDIS, a type of space ship that is sentient and has chameleon powers (although currently stuck as an old-school police call box). TARDIS stands for Time and Relative Dimensions in Space and is famous for being “bigger on the inside.”</p>
+                        <!--<img class="img-responsive center-block" src="images/TARDISbanner.jpg" alt="The TARDIS">-->
                         <br>
                         <p class="article-text">The Doctor travels with companions, usually a female companion, and embarks on grand adventures often saving people and planets from imminent doom. A key element of Doctor Who is that The Doctor does not believe in violence. He does not carry a gun. Instead, he has a sonic screwdriver, a scientific instrument with countless capabilities, along with psychic paper. The Doctor is clever, mad, and passionate about humans, going to great lengths to save us, sometimes from aliens, and sometimes, from ourselves.</p>
                         <br>
-                        <img class="image-companions " src="" alt="The Doctor's Companions">
-                        <p class="photo-caption">From left to right:<br> River Song, Donna Noble, Martha Jones, Rose Tyler, Sarah Jane Smith, Jenny,<br>and on the ground, Amy Pond. </p>
+                        <img class="image-companions img-responsive center-block" src="images/companionsresize.jpg" alt="The Doctor's Companions">
+                        <p class="photo-caption"><strong>From left to right:</strong><br> River Song, Donna Noble, Martha Jones, Rose Tyler, Sarah Jane Smith, Jenny,<br>and on the ground, Amy Pond. </p>
                         <br>
                         <p class="article-text"> A major plot device in Doctor Who is the regeneration capabilities of Time Lords. Meaning, when the Time Lord dies, he regenerates into an entirely new version of himself (i.e., a new actor). The regeneration process has allowed the show to continue to reinvent itself over decades with a total of 12 incarnations of The Doctor thus far (14 if you count both the War Doctor and the new Doctor: Jodie Whittaker, the first female Doctor).</p>
                         </div><!--END col-md-12 Article 1-->
@@ -156,12 +166,10 @@
                         <br>
                         <p class="article-text">In this two-parter, the Doctor and his companion, Martha, are running from a dangerous alien enemy, The Family of Blood. To hide, The Doctor becomes “human” and both he and Martha hide out at a school for boys during 1913. The Doctor becomes a mild-mannered teacher  who develops romantic feelings for a nurse at the school (with no memories of his life as a Time Lord). Martha takes on the job as a maid in the school while watching over The Doctor. The Family of Blood eventually find them and attack the school and the children. The Doctor must make the ultimate choice of remaining human or becoming a Time Lord once again to defeat his enemies. Tennant’s performance is incredible, showing the duality of his personas – the human and the Time Lord – and the sacrifices he makes to save humans. This episode is best known for the following exchange which highlights the awesomeness of The Doctor's fury:
                         </p>
-                        <!-- Make this a blockquote-->
-                        <p class="">
+                        <blockquote class="">
                             He never raised his voice. That was the worst thing... the fury of the Time Lord... and then we discovered why. Why this Doctor, who had fought with gods and demons, why he had run away from us and hidden. He was being kind...He wrapped my father in unbreakable chains forged in the heart of a dwaf star. He tricked my mother into the event horizon of a collapsing galaxy. To be imprisoned there...forever. He still visits my sister, once a year, every year. I wonder if one day he might forgive her... but there she is. Can you see? He trapped her inside a mirror. Every mirror. If ever you look at your reflection and see something move behind you just for a second, that's her. That's *always* her. As for me, I was suspended in time and the Doctor put me to work standing over the fields of England as their protector.
-                            <!--Make this a blockqote footer-->
-                            Son of Mine
-                        </p>
+                            <footer>Son of Mine</footer>
+                        </blockquote>
                         <br>
                         <p class="article-text"><strong>Silence in the Library/Forrest of the Dead</strong> (Series 3)<br> Written by Stephen Moffat, Doctor: David Tennant</p>
                         <br>
@@ -235,25 +243,25 @@
                                 </p>
                             </div>
                             <div class="col-md-6">
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/riverimage2resize.jpg" alt="River Song">
                                 <p class="image-caption">River in "A Good Man Goes to War."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverLetsKillHitler.jpg" alt="River Song">
                                 <p class="image-caption">River in "Let's Kill Hitler."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverWedding.jpg" alt="River Song">
                                 <p class="image-caption">River in "The Wedding of River Song."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverTimeofAngels.jpg" alt="River Song">
                                 <p class="image-caption">River in "The Time of Angels."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverHusbands.jpg" alt="River Song">
                                 <p class="image-caption">River in "The Husbands of River Song."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverSilence.jpg" alt="River Song">
                                 <p class="image-caption">River in "Silence in the Library."</p>
                                 <br>
-                                <img class="" src="" alt="River Song">
+                                <img class="img-responsive" src="images/RiverNameoftheDoctor.jpg" alt="River Song">
                                 <p class="image-caption">River in "The Name of the Doctor."</p>
                                 <br>
                             </div>
@@ -307,40 +315,40 @@
                 <p>My favorite book tie-ins.</p>
                 <div class="row">
                     <div class="col-md-4">
-                        <p class="">Philosophy & Who</p>
+                        <p class=""><a href="https://www.amazon.com/More-Doctor-Who-Philosophy-Regeneration-ebook/dp/B016HBZ0ZU/ref=sr_1_2?s=books&ie=UTF8&qid=1504384055&sr=1-2&keywords=Doctor+Who+and+Philosophy" target="_blank">Philosophy & Who</a></p>
                         <img class="img-responsive" src="images/DoctorPhilosophy.jpg" alt="Doctor Who & Philosophy">
                         <br>
                     </div>
                     <div class="col-md-4">
-                        <p class="">Whovian Fairy Tales</p>
+                        <p class=""><a href="https://www.amazon.com/Doctor-Who-Time-Fairy-Tales-ebook/dp/B017F64368/ref=sr_1_1?s=books&ie=UTF8&qid=1504385101&sr=1-1&keywords=doctor+who+time+lord+fairy+tales" target="_blank">Whovian Fairy Tales</a></p>
                         <img class="img-responsive" src="images/TimeLordFairyTales.jpg" alt="Time Lord Fairy Tales">
                         <br>
                     </div>
                     <div class="col-md-4">
-                        <p class="">Legends: River Song</p>
+                        <p class=""><a href="https://www.amazon.com/Doctor-Who-Legends-River-Song-ebook/dp/B01AHGWK54/ref=sr_1_1?s=books&ie=UTF8&qid=1504385323&sr=1-1&keywords=The+Legends+of+River+Song" target="_blank">Legends: River Song</a></p>
                         <img class="img-responsive" src="images/LegendsOfRiverSong.jpg" alt="Legends of River Song">
                         <br>
                     </div>
                 </div>
-            </div><!--END Book Recommendations-->
+            </div><!--END Fanfiction-->
             <div id="fanart" class="fanart col-md-6 text-center">
                 <h2 class="text-primary">Fan Art</h2>
                 <p>My favorite works of fan art.</p>
                 <div class="row">
                     <div class="col-md-4">
                         <p>The Doctor & Idris</p>
-                        <img class="img-responsive" src="images/DoctorandIdris.jpg" alt="The Doctor & Idris"/>
-                        <p class="source">Image Source</p>
+                        <img class="img-responsive" src="images/DoctorandIdrisresize.jpg" alt="The Doctor & Idris"/>
+                        <p class="source">Image <a href="http://orneryjen.deviantart.com/art/DW-The-Tardis-and-her-Doctor-254570745" target="_blank">Source</a></p>
                     </div>
                     <div class="col-md-4">
                        <p>River Song</p>
                        <img class="img-responsive" src="images/Riverfanartresize.jpg" alt="River Song"/>
-                       <p class="source">Image Source</p>
+                       <p class="source">Image <a href="http://www.fanpop.com/clubs/river-song/images/35154862/title/river-fanart" target="_blank">Source</a></p>
                     </div>
                     <div class="col-md-4">
                         <p>Doctor Who (#10)</p>
                         <img class="img-responsive" src="images/tennantfanartresize.jpg" alt="David Tennant"/>
-                        <p class="source">Image Source</p>
+                        <p class="source">Image <a href="https://www.pinterest.com/pin/162833342751327192/" target="_blank">Source</a></p>
                     </div>
                 </div><!--END Fanart Row-->
             </div><!--END Fanart-->
@@ -352,7 +360,7 @@
 
 <section id="footer" class="row">
     <div class="col-md-12">
-        <p class="footer">Made with and a sonic screwdriver by Faith H. Wallace, Ph.D., 2017,</p>
+        <p class="footer">Made with <span class="red"><i class="fa fa-heart" aria-hidden="true"></i></span> and a sonic screwdriver by Faith H. Wallace, Ph.D., 2017, <a href="https://twitter.com/fwallacephd"><i class="fa fa-twitter-square fa-1x" aria-hidden="true"></i></a>, <a class="email" href="mailto:whoviangirl09@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
     </div><!--END footer col-md-12-->
 </section><!--END Footer-->
 
@@ -369,3 +377,4 @@
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+

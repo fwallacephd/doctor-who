@@ -28,25 +28,16 @@
     max-width: ;
 }
 
-#logo {
-    margin-top: 0px;
-    margin-left: -30px;
-    max-width: 18%;
-}
 
-.links {
-    text-align: right;
-    color: white;
-}
 
 .navbar-nav >li >a {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: ;
     color: white;
     text-align: right;
 }
 
 .form-control {
-    margin-top: 8px;
+    margin-top: ;
 }
 
 #main-nav-menu {
@@ -55,13 +46,11 @@
 
 /*CAROUSEL INNER*/
 #myCarousel {
-    margin-top: 0%;
+
 }
 
 .carousel-inner {
-    max-height: 700px;
-    margin-top: 0px;
-    padding-top: 0px;
+
 }
 
 #carousel-images {
@@ -75,27 +64,27 @@
 }
 
 h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: ;
 }
 
 .articles {
-    font-family: 'Playfair Display', serif;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    border-top: 8px solid ;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: 8px solid ;
+    font-family: ;
+    margin-top:
+    margin-left:
+    margin-right:
+    padding-left:
+    padding-right:
+    padding-top:
+    border-top: 8px
+    padding-bottom:
+    margin-bottom:
+    border-bottom: 8px
 
 }
 
 .article-text {
     font-size: 20px;
-    font-family: 'Playfair Display', serif;
+    font-family:
 }
 
 .photo-caption {
@@ -108,10 +97,10 @@ h2 {
 
 /*FANDOM*/
 #fandom {
-    padding-bottom: 20px;
-    border-bottom: 8px solid ;
-    margin-left: 20px;
-    margin-right: 70px;
+    padding-bottom: ;
+    border-bottom:  ;
+    margin-left: ;
+    margin-right: ;
 }
 
 .source {
@@ -119,9 +108,7 @@ h2 {
 }
 
 /*FOOTER*/
-.red {
-    color: red;
-}
+
 
 #footer {
     font-family: 'Josefin Sans', sans-serif;
