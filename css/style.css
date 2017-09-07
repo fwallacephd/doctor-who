@@ -95,7 +95,7 @@ h2 {
 }
 
 
-/*FANDOM*/
+/*FANDOM & Fan Art*/
 #fandom {
     padding-bottom: ;
     border-bottom:  ;
@@ -107,6 +107,9 @@ h2 {
     margin-top: 5px;
 }
 
+.fanart {
+    font-family:'Playfair Display', serif;;
+}
 /*FOOTER*/
 
 
