@@ -6,6 +6,13 @@
      box-sizing: border-box;
 }
 
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333333;
+}
+
 /*NAVIGATION*/
 .navbar {
     backgound-color: ;
@@ -64,9 +71,21 @@
 }
 
 h2 {
-    font-family: ;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px;
 }
 
+.subheader {
+    font-family: 'Helvetica-Neue', Hevetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.blueText {
+    color: #337ab7;
+}
 .articles {
     font-family: ;
     margin-top:
@@ -92,6 +111,8 @@ h2 {
 }
 .image-companions {
     max-width: 50%;
+    margin: 0 auto;
+    display: block;
 }
 
 
