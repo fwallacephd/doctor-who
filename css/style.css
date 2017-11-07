@@ -14,34 +14,37 @@ body {
 }
 
 /*NAVIGATION*/
-.navbar {
-    backgound-color: ;
-}
+
 
 #navigation {
-    font-size: ;
-    background-color: ;
-    font-family: ;
-    color: ;
+    font-size: 17px;
+    background-color: #333333;
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
 
 }
 
+.navbar {
+    background-color: black;
+}
 .navbar-brand {
-    margin: ;
+    margin: -22px;
 }
 
 .logo {
-    margin-top: ;
-    max-width: ;
+    margin-top: 0px;
+    max-width: 20%;
+    margin-left: -25px
 }
 
 
 
 .navbar-nav >li >a {
-    font-family: ;
+    font-family: 'Playfair Display', sans-serif;
     color: white;
     text-align: right;
 }
+
 
 .form-control {
     margin-top: ;
